@@ -1,0 +1,30 @@
+{
+  "name": "catch-all",
+  "version": "0.0.1",
+  "description": "A simple smtp catch all",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Pedro Narciso García Revington",
+  "license": "MIT",
+  "dependencies": {
+    "simplesmtp": "~0.3.10",
+    "mailparser": "~0.3.6"
+  },
+  "devDependencies": {
+    "nodemailer": "~0.5.3",
+    "mocha": "~1.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/revington/catch-all.git"
+  },
+  "keywords": [
+    "smtp",
+    "test"
+  ],
+  "bugs": {
+    "url": "https://github.com/revington/catch-all/issues"
+  }
+}
