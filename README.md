@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/revington/catch-all.png)](http://travis-ci.org/revington/catch-all)
 catch-all
 =========
 
