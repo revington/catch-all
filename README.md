@@ -12,7 +12,7 @@ A simple smtp-catch-all for your tests (node.js).
 
 Simple usage:
 
-    var smtpCatchAll = require('..');
+    var smtpCatchAll = require('catch-all');
     var server = smtpCatchAll.createServer();
     server.on('newEmail', function (email) {
         console.log(email);
@@ -21,7 +21,7 @@ Simple usage:
 
 Accessing the envelope:
 
-    var smtpCatchAll = require('..');
+    var smtpCatchAll = require('catch-all');
     var server = smtpCatchAll.createServer();
     server.on('newEmail', function (email, envelope) {
         console.log(envelope);

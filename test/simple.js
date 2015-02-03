@@ -1,13 +1,17 @@
+"use strict";
 var assert = require('assert'),
     smtpCatchAll = require('..'),
-    nodemailer = require('nodemailer');
+    nodemailer = require('nodemailer'),
+    smtpTransport = require('nodemailer-smtp-transport');
 
 function sendEmail() {
-    var smtpTransport = nodemailer.createTransport('SMTP', {
-        port: 4040,
-        debug: false
-    });
-    smtpTransport.sendMail({
+    var smtpOptions = {
+            port: 4040,
+            debug: false,
+            ignoreTLS: true
+        },
+        transporter = nodemailer.createTransport(smtpTransport(smtpOptions));
+    transporter.sendMail({
         from: 'me@gmail.com',
         to: 'you@gmail.com',
         subject: 'hey, ho',
