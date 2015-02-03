@@ -56,3 +56,7 @@ Email is just a simple json email like:
     to: [ { address: 'you@gmail.com', name: '' } ],
     date: Tue Nov 12 2013 20:48:53 GMT+0100 (CET) }
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/revington/catch-all/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
